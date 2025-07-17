@@ -1,0 +1,23 @@
+{
+  "name": "splitpro-cross-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/expo",
+    "build": "npm run build --workspace",
+    "lint": "npm run lint --workspace",
+    "clean": "rm -rf node_modules && rm -rf apps/*/node_modules && rm -rf packages/*/node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "eslint": "^8.35.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
